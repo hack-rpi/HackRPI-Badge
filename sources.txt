@@ -1,0 +1,26 @@
+Dot matrix LEDs
+  0.7" - https://www.alibaba.com/product-detail/CC-CA-0-7-inch-1_60018565827.html
+  1.9" - https://www.alibaba.com/product-detail/HOT-high-resolution-8x8-led-dot_1706685258.html?s=p
+  2.3" - https://www.alibaba.com/product-detail/single-color-ultra-green-5mm-dot_1894026410.html?s=p
+  
+  1.2" - https://www.alibaba.com/product-detail/single-color-red-32x32-mm-dot_60018543594.html
+         http://www.digikey.com/product-search/en?keywords=LDM-13488MI-ND
+
+ESP8266 Modules
+  https://www.alibaba.com/product-detail/ORIGINAL-IC-ESP8266-serial-port-wifi_60353511728.html
+
+Darlington Array
+  ULN2803 (SOP18)
+  http://www.digikey.com/product-search/en?keywords=ULN2803AFWGCELCT-ND
+
+Shift Register
+  74HC595 (TSSOP16)
+  http://www.digikey.com/product-detail/en/nxp-semiconductors/74HC595PW,118/568-2263-1-ND/946725
+
+Resistor Arrays
+  47 Ohm
+  http://www.digikey.com/product-detail/en/yageo/YC164-JR-0747RL/YC164J-47CT-ND/1005645
+  56 Ohm
+  http://www.digikey.com/product-detail/en/yageo/YC164-JR-0756RL/YC164J-56CT-ND/1005648
+  62 Ohm
+  http://www.digikey.com/product-detail/en/rohm-semiconductor/MNR14ERAPJ620/RHM1487CT-ND/4086229

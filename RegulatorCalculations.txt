@@ -1,0 +1,30 @@
+AAT1217 (3.3V)
+http://www.digikey.com/product-detail/en/skyworks-solutions-inc/AAT1217ICA-3.3-T1/863-1496-1-ND/4246188
+
+Constraints
+V_IN      = 2.4    V (Minimum)
+V_OUT     = 3.3    V
+I_OUT     = 0.250  A (Maximum)
+L         = 7.4    uH
+F_SW      = 1.2    MHz
+n         = 92     % (2.4V at 250mA)
+
+Calculated
+D         = 0.2727 (27.27%)
+Delta I_L = 0.1161 A
+I_DC      = 0.3736 A
+I_PEAK    = 0.4317 A
+
+Appropriate Inductor
+http://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CIG22L4R7MNE/1276-6213-1-ND/3972131
+Model # : CIG22L4R7MNE
+110mOhm DCR, 1.1A Max Current, ~2.2uH @ 0.3736A
+
+Appropriate Capacitor
+http://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL21A475KQFNNNG/1276-6465-6-ND/5958156
+Model # : CL21A475KQFNNNG
+4.7uF, X5R, 6.3V
+
+Resistor
+http://www.digikey.com/product-detail/en/yageo/RC0603JR-071ML/311-1.0MGRCT-ND/729625
+1 MOhm
