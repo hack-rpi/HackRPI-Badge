@@ -24,3 +24,6 @@ Resistor Arrays
   http://www.digikey.com/product-detail/en/yageo/YC164-JR-0756RL/YC164J-56CT-ND/1005648
   62 Ohm
   http://www.digikey.com/product-detail/en/rohm-semiconductor/MNR14ERAPJ620/RHM1487CT-ND/4086229
+  
+Flash
+  http://www.digikey.com/product-detail/en/adesto-technologies/AT25SF041-SSHD-T/1265-1131-1-ND/4824165
