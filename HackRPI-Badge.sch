@@ -5830,6 +5830,11 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <label x="91.44" y="-50.8" size="1.778" layer="95"/>
 <pinref part="U8" gate="G$1" pin="SCK"/>
 </segment>
+<segment>
+<pinref part="U7" gate="A" pin="CLK"/>
+<wire x1="104.14" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
+<label x="91.44" y="88.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -6689,6 +6694,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <segment>
 <pinref part="U1" gate="G$1" pin="TXD"/>
 <wire x1="17.78" y1="5.08" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
+<label x="17.78" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-137.16" y1="45.72" x2="-129.54" y2="45.72" width="0.1524" layer="91"/>
@@ -6700,6 +6706,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <segment>
 <pinref part="U1" gate="G$1" pin="RXD"/>
 <wire x1="17.78" y1="2.54" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
+<label x="17.78" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-137.16" y1="48.26" x2="-129.54" y2="48.26" width="0.1524" layer="91"/>
@@ -6916,13 +6923,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <label x="129.54" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CLK" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="CLK"/>
-<wire x1="104.14" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
-<label x="91.44" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$31" class="1">
 <segment>
 <pinref part="BAT2" gate="G$1" pin="+"/>
@@ -6950,6 +6950,30 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,182.88,45.72,RN6C,2,,,,"/>
+<approved hash="101,1,182.88,38.1,RN6D,2,,,,"/>
+<approved hash="102,1,-96.52,5.08,VOUT,3.3V,,,,"/>
+<approved hash="104,1,-17.78,-12.7,U1,VCC,3.3V,,,"/>
+<approved hash="104,1,-121.92,5.08,U2,VIN,V_BATT,,,"/>
+<approved hash="202,1,-96.52,-5.08,U2,FB,,,,"/>
+<approved hash="104,1,-86.36,139.7,U4,VCC,3.3V,,,"/>
+<approved hash="104,1,-86.36,106.68,U5,VCC,3.3V,,,"/>
+<approved hash="104,1,-86.36,172.72,U6,VCC,3.3V,,,"/>
+<approved hash="202,1,104.14,78.74,U7,!QH,,,,"/>
+<approved hash="202,1,104.14,83.82,U7,SER,,,,"/>
+<approved hash="104,1,104.14,96.52,U7,VCC,3.3V,,,"/>
+<approved hash="104,1,-190.5,33.02,BAT1,-,N$31,,,"/>
+<approved hash="104,1,-190.5,43.18,BAT1,+,V_BATT,,,"/>
+<approved hash="104,1,-190.5,17.78,BAT2,-,GND,,,"/>
+<approved hash="104,1,-190.5,27.94,BAT2,+,N$31,,,"/>
+<approved hash="106,1,-17.78,2.54,N$2,,,,,"/>
+<approved hash="106,1,-86.36,83.82,N$33,,,,,"/>
+<approved hash="113,1,0,0,U1,,,,,"/>
+<approved hash="113,1,-46.99,42.1428,U3,,,,,"/>
+<approved hash="113,1,-188.781,38.1,BAT1,,,,,"/>
+<approved hash="113,1,-188.781,22.86,BAT2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
