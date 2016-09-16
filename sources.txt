@@ -8,6 +8,7 @@ Dot matrix LEDs
 
 ESP8266 Modules
   https://www.alibaba.com/product-detail/ORIGINAL-IC-ESP8266-serial-port-wifi_60353511728.html
+  http://www.digikey.com/product-detail/en/adafruit-industries-llc/2491/1528-1438-ND/5761206
 
 Darlington Array
   ULN2803 (SOP18)
@@ -16,6 +17,8 @@ Darlington Array
 Shift Register
   74HC595 (TSSOP16)
   http://www.digikey.com/product-detail/en/nxp-semiconductors/74HC595PW,118/568-2263-1-ND/946725
+  74HC165 (TSSOP16)
+  
 
 Resistor Arrays
   47 Ohm
