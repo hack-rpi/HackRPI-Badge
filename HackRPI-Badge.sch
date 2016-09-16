@@ -5501,30 +5501,64 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </class>
 </classes>
 <parts>
-<part name="U1" library="adafruit" deviceset="ESP-12" device=""/>
+<part name="U1" library="adafruit" deviceset="ESP-12" device="">
+<attribute name="PARTNO" value="2491"/>
+</part>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="1007" value="4.7uH"/>
-<part name="C_IN" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="4.7uF"/>
-<part name="C_OUT" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="4.7uF"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1M"/>
-<part name="U2" library="mylib" deviceset="AAT1217" device="" value="3.3V"/>
-<part name="LED_LEFT" library="mylib" deviceset="8X8LEDMATRIX_COLUMN_CATHODE" device="LDM-13488MI"/>
-<part name="LEF_RIGHT" library="mylib" deviceset="8X8LEDMATRIX_COLUMN_CATHODE" device="LDM-13488MI"/>
-<part name="U4" library="SparkFun-DigitalIC" deviceset="74*595" device=""/>
-<part name="U5" library="SparkFun-DigitalIC" deviceset="74*595" device=""/>
-<part name="U6" library="SparkFun-DigitalIC" deviceset="74*595" device=""/>
-<part name="U3" library="SparkFun-PowerIC" deviceset="ULN2803" device="SOICW"/>
+<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="1007" value="4.7uH">
+<attribute name="PARTNO" value="CIG22L4R7MNE"/>
+</part>
+<part name="C_IN" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="4.7uF">
+<attribute name="PARTNO" value="CL21A475KQFNNNG"/>
+</part>
+<part name="C_OUT" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="4.7uF">
+<attribute name="PARTNO" value="CL21A475KQFNNNG"/>
+</part>
+<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1M">
+<attribute name="PARTNO" value="RC0603JR-071ML"/>
+</part>
+<part name="U2" library="mylib" deviceset="AAT1217" device="" value="3.3V">
+<attribute name="PARTNO" value="AAT1217ICA-3.3-T1"/>
+</part>
+<part name="LED_LEFT" library="mylib" deviceset="8X8LEDMATRIX_COLUMN_CATHODE" device="LDM-13488MI">
+<attribute name="PARTNO" value="LDM-13488MI"/>
+</part>
+<part name="LEF_RIGHT" library="mylib" deviceset="8X8LEDMATRIX_COLUMN_CATHODE" device="LDM-13488MI">
+<attribute name="PARTNO" value="LDM-13488MI"/>
+</part>
+<part name="U4" library="SparkFun-DigitalIC" deviceset="74*595" device="">
+<attribute name="PARTNO" value="74HC595PW,118"/>
+</part>
+<part name="U5" library="SparkFun-DigitalIC" deviceset="74*595" device="">
+<attribute name="PARTNO" value="74HC595PW,118"/>
+</part>
+<part name="U6" library="SparkFun-DigitalIC" deviceset="74*595" device="">
+<attribute name="PARTNO" value="74HC595PW,118"/>
+</part>
+<part name="U3" library="SparkFun-PowerIC" deviceset="ULN2803" device="SOICW">
+<attribute name="PARTNO" value="ULN2803AFWG,C,EL"/>
+</part>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="RN1" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="47"/>
-<part name="RN2" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="47"/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF"/>
+<part name="RN1" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="47">
+<attribute name="PARTNO" value="YC164-JR-0747RL"/>
+</part>
+<part name="RN2" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="47">
+<attribute name="PARTNO" value="YC164-JR-0747RL"/>
+</part>
+<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF">
+<attribute name="PARTNO" value="CC0603ZRY5V9BB104"/>
+</part>
+<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF">
+<attribute name="PARTNO" value="CC0603ZRY5V9BB104"/>
+</part>
+<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF">
+<attribute name="PARTNO" value="CC0603ZRY5V9BB104"/>
+</part>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -5534,7 +5568,9 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF">
+<attribute name="PARTNO" value="CC0603ZRY5V9BB104"/>
+</part>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -5543,48 +5579,92 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10k">
+<attribute name="PARTNO" value="RC0603JR-0710KL"/>
+</part>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10k"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10k">
+<attribute name="PARTNO" value="RC0603JR-0710KL"/>
+</part>
+<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10k">
+<attribute name="PARTNO" value="RC0603JR-0710KL"/>
+</part>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10k">
+<attribute name="PARTNO" value="RC0603JR-0710KL"/>
+</part>
 <part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="470"/>
-<part name="RN3" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="47"/>
-<part name="RN4" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="47"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="470">
+<attribute name="PARTNO" value="RC0603JR-07470RL"/>
+</part>
+<part name="RN3" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="47">
+<attribute name="PARTNO" value="YC164-JR-0747RL"/>
+</part>
+<part name="RN4" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="47">
+<attribute name="PARTNO" value="YC164-JR-0747RL"/>
+</part>
 <part name="J1" library="SparkFun-Connectors" deviceset="FTDI_BASIC" device="PTH"/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF">
+<attribute name="PARTNO" value="CC0603ZRY5V9BB104"/>
+</part>
 <part name="J2" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="TRACE-PTH"/>
-<part name="U7" library="mylib" deviceset="74*165" device="DT"/>
-<part name="RN5" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="10k"/>
+<part name="U7" library="mylib" deviceset="74*165" device="DT">
+<attribute name="PARTNO" value="MC74HC165ADTR2G"/>
+</part>
+<part name="RN5" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="10k">
+<attribute name="PARTNO" value="742C083103JP"/>
+</part>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="RN6" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="10k"/>
+<part name="RN6" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="10k">
+<attribute name="PARTNO" value="742C083103JP"/>
+</part>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="S5" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
-<part name="S6" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
-<part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
-<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
-<part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
-<part name="S4" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
+<part name="S5" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH">
+<attribute name="PARTNO" value="1825910-6"/>
+</part>
+<part name="S6" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH">
+<attribute name="PARTNO" value="1825910-6"/>
+</part>
+<part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH">
+<attribute name="PARTNO" value="1825910-6"/>
+</part>
+<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH">
+<attribute name="PARTNO" value="1825910-6"/>
+</part>
+<part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH">
+<attribute name="PARTNO" value="1825910-6"/>
+</part>
+<part name="S4" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH">
+<attribute name="PARTNO" value="1825910-6"/>
+</part>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF">
+<attribute name="PARTNO" value="CC0603ZRY5V9BB104"/>
+</part>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY21" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF"/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF">
+<attribute name="PARTNO" value="CC0603ZRY5V9BB104"/>
+</part>
 <part name="SUPPLY22" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="BAT1" library="SparkFun-Electromechanical" deviceset="BATTERY" device="AAA"/>
-<part name="BAT2" library="SparkFun-Electromechanical" deviceset="BATTERY" device="AAA"/>
+<part name="BAT1" library="SparkFun-Electromechanical" deviceset="BATTERY" device="AAA">
+<attribute name="PARTNO" value="BK-82"/>
+</part>
+<part name="BAT2" library="SparkFun-Electromechanical" deviceset="BATTERY" device="AAA">
+<attribute name="PARTNO" value="BK-82"/>
+</part>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U8" library="SparkFun-DigitalIC" deviceset="AT25FS010" device=""/>
+<part name="U8" library="SparkFun-DigitalIC" deviceset="AT25FS010" device="" value="AT25SF041">
+<attribute name="PARTNO" value="AT25SF041-SSHD-T"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -5593,31 +5673,55 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <text x="38.1" y="5.08" size="1.778" layer="91">GPIO2</text>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="0" y="0"/>
+<instance part="U1" gate="G$1" x="0" y="0">
+<attribute name="PARTNO" x="0" y="0" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND1" gate="1" x="25.4" y="-17.78"/>
 <instance part="SUPPLY2" gate="G$1" x="-81.28" y="7.62"/>
 <instance part="GND3" gate="1" x="-109.22" y="-20.32"/>
 <instance part="SUPPLY3" gate="G$1" x="-147.32" y="7.62"/>
-<instance part="L1" gate="G$1" x="-124.46" y="12.7" rot="R90"/>
-<instance part="C_IN" gate="G$1" x="-137.16" y="-5.08"/>
-<instance part="C_OUT" gate="G$1" x="-91.44" y="-5.08"/>
+<instance part="L1" gate="G$1" x="-124.46" y="12.7" rot="R90">
+<attribute name="PARTNO" x="-124.46" y="12.7" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C_IN" gate="G$1" x="-137.16" y="-5.08">
+<attribute name="PARTNO" x="-137.16" y="-5.08" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C_OUT" gate="G$1" x="-91.44" y="-5.08">
+<attribute name="PARTNO" x="-91.44" y="-5.08" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R1" gate="G$1" x="-127" y="0" smashed="yes" rot="R90">
 <attribute name="NAME" x="-125.73" y="0.4826" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-125.73" y="-2.032" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="-127" y="0" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U2" gate="G$1" x="-109.22" y="0"/>
-<instance part="LED_LEFT" gate="G$1" x="-7.62" y="45.72"/>
-<instance part="LEF_RIGHT" gate="G$1" x="35.56" y="45.72"/>
-<instance part="U4" gate="A" x="-101.6" y="129.54"/>
-<instance part="U5" gate="A" x="-101.6" y="96.52"/>
-<instance part="U6" gate="A" x="-101.6" y="162.56"/>
-<instance part="U3" gate="G$1" x="-48.26" y="43.18"/>
+<instance part="U2" gate="G$1" x="-109.22" y="0">
+<attribute name="PARTNO" x="-109.22" y="0" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="LED_LEFT" gate="G$1" x="-7.62" y="45.72">
+<attribute name="PARTNO" x="-7.62" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="LEF_RIGHT" gate="G$1" x="35.56" y="45.72">
+<attribute name="PARTNO" x="35.56" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U4" gate="A" x="-101.6" y="129.54">
+<attribute name="PARTNO" x="-101.6" y="129.54" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U5" gate="A" x="-101.6" y="96.52">
+<attribute name="PARTNO" x="-101.6" y="96.52" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U6" gate="A" x="-101.6" y="162.56">
+<attribute name="PARTNO" x="-101.6" y="162.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U3" gate="G$1" x="-48.26" y="43.18">
+<attribute name="PARTNO" x="-48.26" y="43.18" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND2" gate="1" x="-66.04" y="12.7"/>
 <instance part="SUPPLY4" gate="G$1" x="-25.4" y="20.32" rot="R270"/>
 <instance part="GND4" gate="1" x="-119.38" y="144.78"/>
 <instance part="RN1" gate="A" x="-22.86" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="-24.3586" y="69.85" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-27.178" y="72.39" size="1.778" layer="96" rot="R90"/>
+<attribute name="PARTNO" x="-22.86" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="RN1" gate="B" x="-17.78" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="-19.2786" y="69.85" size="1.778" layer="95" rot="R90"/>
@@ -5630,6 +5734,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </instance>
 <instance part="RN2" gate="A" x="-2.54" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="-4.0386" y="69.85" size="1.778" layer="95" rot="R90"/>
+<attribute name="PARTNO" x="-2.54" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="RN2" gate="B" x="2.54" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="1.0414" y="69.85" size="1.778" layer="95" rot="R90"/>
@@ -5640,9 +5745,15 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <instance part="RN2" gate="D" x="12.7" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.2014" y="69.85" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="C1" gate="G$1" x="-137.16" y="162.56"/>
-<instance part="C2" gate="G$1" x="-137.16" y="132.08"/>
-<instance part="C3" gate="G$1" x="-137.16" y="101.6"/>
+<instance part="C1" gate="G$1" x="-137.16" y="162.56">
+<attribute name="PARTNO" x="-137.16" y="162.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="-137.16" y="132.08">
+<attribute name="PARTNO" x="-137.16" y="132.08" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C3" gate="G$1" x="-137.16" y="101.6">
+<attribute name="PARTNO" x="-137.16" y="101.6" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND5" gate="1" x="-137.16" y="93.98"/>
 <instance part="GND6" gate="1" x="-137.16" y="124.46"/>
 <instance part="GND7" gate="1" x="-137.16" y="154.94"/>
@@ -5658,7 +5769,9 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <instance part="SUPPLY8" gate="G$1" x="-137.16" y="109.22"/>
 <instance part="SUPPLY9" gate="G$1" x="-137.16" y="139.7"/>
 <instance part="SUPPLY10" gate="G$1" x="-137.16" y="170.18"/>
-<instance part="C4" gate="G$1" x="-45.72" y="-2.54"/>
+<instance part="C4" gate="G$1" x="-45.72" y="-2.54">
+<attribute name="PARTNO" x="-45.72" y="-2.54" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY11" gate="G$1" x="-45.72" y="5.08"/>
 <instance part="GND8" gate="1" x="-45.72" y="-10.16"/>
 <instance part="SUPPLY12" gate="G$1" x="-25.4" y="-12.7" smashed="yes" rot="R90">
@@ -5675,7 +5788,9 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <instance part="SUPPLY15" gate="G$1" x="-119.38" y="132.08" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-119.38" y="132.08" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="53.34" y="-12.7"/>
+<instance part="R2" gate="G$1" x="53.34" y="-12.7">
+<attribute name="PARTNO" x="53.34" y="-12.7" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND11" gate="1" x="63.5" y="-15.24"/>
 <instance part="SUPPLY1" gate="G$1" x="-25.4" y="0" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-25.4" y="0" size="1.778" layer="96"/>
@@ -5683,16 +5798,25 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <instance part="SUPPLY16" gate="G$1" x="63.5" y="-5.08" smashed="yes" rot="R270">
 <attribute name="VALUE" x="58.42" y="-5.08" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="53.34" y="-5.08"/>
-<instance part="R4" gate="G$1" x="53.34" y="2.54"/>
+<instance part="R3" gate="G$1" x="53.34" y="-5.08">
+<attribute name="PARTNO" x="53.34" y="-5.08" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R4" gate="G$1" x="53.34" y="2.54">
+<attribute name="PARTNO" x="53.34" y="2.54" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY17" gate="G$1" x="63.5" y="2.54" smashed="yes" rot="R270">
 <attribute name="VALUE" x="58.42" y="2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="R5" gate="G$1" x="86.36" y="20.32" rot="R90"/>
+<instance part="R5" gate="G$1" x="86.36" y="20.32" rot="R90">
+<attribute name="PARTNO" x="86.36" y="20.32" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY18" gate="G$1" x="86.36" y="27.94"/>
-<instance part="R6" gate="G$1" x="93.98" y="12.7"/>
+<instance part="R6" gate="G$1" x="93.98" y="12.7">
+<attribute name="PARTNO" x="93.98" y="12.7" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="RN3" gate="A" x="20.32" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.8214" y="69.85" size="1.778" layer="95" rot="R90"/>
+<attribute name="PARTNO" x="20.32" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="RN3" gate="B" x="25.4" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="23.9014" y="69.85" size="1.778" layer="95" rot="R90"/>
@@ -5705,6 +5829,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </instance>
 <instance part="RN4" gate="A" x="40.64" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="39.1414" y="69.85" size="1.778" layer="95" rot="R90"/>
+<attribute name="PARTNO" x="40.64" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="RN4" gate="B" x="45.72" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="44.2214" y="69.85" size="1.778" layer="95" rot="R90"/>
@@ -5719,12 +5844,19 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <instance part="C5" gate="G$1" x="93.98" y="5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.424" y="0.381" size="1.778" layer="95"/>
 <attribute name="VALUE" x="90.424" y="-2.159" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="93.98" y="5.08" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J2" gate="1" x="109.22" y="12.7"/>
-<instance part="U7" gate="A" x="116.84" y="83.82"/>
-<instance part="RN6" gate="A" x="187.96" y="60.96" rot="R180"/>
+<instance part="U7" gate="A" x="116.84" y="83.82">
+<attribute name="PARTNO" x="116.84" y="83.82" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="RN6" gate="A" x="187.96" y="60.96" rot="R180">
+<attribute name="PARTNO" x="187.96" y="60.96" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="RN6" gate="B" x="187.96" y="53.34" rot="R180"/>
-<instance part="RN5" gate="D" x="187.96" y="91.44" rot="R180"/>
+<instance part="RN5" gate="D" x="187.96" y="91.44" rot="R180">
+<attribute name="PARTNO" x="187.96" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="RN5" gate="C" x="187.96" y="83.82" rot="R180"/>
 <instance part="GND12" gate="1" x="132.08" y="68.58"/>
 <instance part="RN5" gate="B" x="187.96" y="76.2" rot="R180"/>
@@ -5734,40 +5866,56 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <instance part="SUPPLY19" gate="G$1" x="198.12" y="109.22"/>
 <instance part="S5" gate="G$1" x="170.18" y="60.96" smashed="yes">
 <attribute name="NAME" x="167.64" y="63.5" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="170.18" y="60.96" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="S6" gate="G$1" x="170.18" y="53.34" smashed="yes">
 <attribute name="NAME" x="167.64" y="55.88" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="170.18" y="53.34" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="S1" gate="G$1" x="170.18" y="91.44" smashed="yes">
 <attribute name="NAME" x="167.64" y="93.98" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="170.18" y="91.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="S2" gate="G$1" x="170.18" y="83.82" smashed="yes">
 <attribute name="NAME" x="167.64" y="86.36" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="170.18" y="83.82" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="S3" gate="G$1" x="170.18" y="76.2" smashed="yes">
 <attribute name="NAME" x="167.64" y="78.74" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="170.18" y="76.2" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="S4" gate="G$1" x="170.18" y="68.58" smashed="yes">
 <attribute name="NAME" x="167.64" y="71.12" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="170.18" y="68.58" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND13" gate="1" x="157.48" y="40.64"/>
 <instance part="SUPPLY20" gate="G$1" x="91.44" y="96.52" smashed="yes" rot="R90">
 <attribute name="VALUE" x="91.44" y="96.52" size="1.778" layer="96"/>
 </instance>
 <instance part="GND14" gate="1" x="96.52" y="68.58"/>
-<instance part="C6" gate="G$1" x="78.74" y="86.36"/>
+<instance part="C6" gate="G$1" x="78.74" y="86.36">
+<attribute name="PARTNO" x="78.74" y="86.36" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND15" gate="1" x="78.74" y="78.74"/>
 <instance part="SUPPLY21" gate="G$1" x="78.74" y="93.98"/>
-<instance part="C7" gate="G$1" x="-88.9" y="45.72"/>
+<instance part="C7" gate="G$1" x="-88.9" y="45.72">
+<attribute name="PARTNO" x="-88.9" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY22" gate="G$1" x="-88.9" y="53.34"/>
 <instance part="GND16" gate="1" x="-88.9" y="38.1"/>
-<instance part="BAT1" gate="G$1" x="-190.5" y="38.1" rot="R270"/>
-<instance part="BAT2" gate="G$1" x="-190.5" y="22.86" rot="R270"/>
+<instance part="BAT1" gate="G$1" x="-190.5" y="38.1" rot="R270">
+<attribute name="PARTNO" x="-190.5" y="38.1" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="BAT2" gate="G$1" x="-190.5" y="22.86" rot="R270">
+<attribute name="PARTNO" x="-190.5" y="22.86" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND17" gate="1" x="-190.5" y="12.7"/>
 <instance part="SUPPLY23" gate="G$1" x="-190.5" y="45.72"/>
 <instance part="SUPPLY24" gate="G$1" x="134.62" y="-30.48"/>
 <instance part="GND18" gate="1" x="134.62" y="-58.42"/>
-<instance part="U8" gate="G$1" x="114.3" y="-40.64"/>
+<instance part="U8" gate="G$1" x="114.3" y="-40.64">
+<attribute name="PARTNO" x="114.3" y="-40.64" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 <bus name="R[0..7],C[0..15]">
