@@ -1951,13 +1951,13 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="1.4224" y1="-0.8104" x2="1.3276" y2="-0.8104" width="0.2032" layer="21"/>
 <wire x1="1.3276" y1="0.8104" x2="1.4224" y2="0.8104" width="0.2032" layer="21"/>
 <wire x1="-1.4224" y1="0.8104" x2="-1.3276" y2="0.8104" width="0.2032" layer="21"/>
-<circle x="0.9398" y="-0.381" radius="0.0359" width="0.3048" layer="21"/>
-<smd name="3" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="1" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="6" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="0" y="1.3001" dx="0.55" dy="1.2" layer="1" rot="R180"/>
+<circle x="0.9398" y="0.381" radius="0.0359" width="0.3048" layer="21"/>
+<smd name="4" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="6" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="1" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="1.3001" dx="0.55" dy="1.2" layer="1" rot="R180"/>
 <text x="-0.8255" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
