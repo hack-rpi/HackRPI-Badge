@@ -10,9 +10,10 @@
 
 HackBadge badge;
 
-const uint8_t  LED_PIN  = 2;
-const char*    HOSTNAME = "badge000";
-const uint16_t PORT     = 13337;
+const uint8_t  LED_PIN      = 2;
+const char*    HOSTNAME     = "badge000";
+const uint16_t PORT         = 13337;
+const char*    DISPLAY_TEXT = "HackRPI! ";
 
 void setup() {
 	uint8_t i;
@@ -40,13 +41,14 @@ void setup() {
 
 void loop() {
 	size_t i;
-	for (i = 0; i < HackBadge::PIXELS_PER_ROW; i++)
-	{
-		size_t x = (HackBadge::PIXELS_PER_ROW - i) - 1;
-		
+	size_t j;
+	size_t width = badge.textWidth(DISPLAY_TEXT);
+	for (i = 0; i < width + 1; i++)
+	{		
 		badge.clear();
-		badge.writeText(x, "HackRPI!", 8);
-		badge.drawFor(62);
+		badge.writeText(0 - i, DISPLAY_TEXT);
+		badge.writeText(width + 1 - i, DISPLAY_TEXT);
+		badge.drawFor(200);
 	}
 	ArduinoOTA.handle();
 }

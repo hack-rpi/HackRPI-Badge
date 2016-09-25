@@ -74,21 +74,28 @@ class HackBadge {
 		/// \param x          The x coordinate of the pixel being set (with 0 being the left column)
 		/// \param y          The y coordinate of the pixel being set (with 0 being the bottom row)
 		/// \param brightness The new brightness of the pixel
-		void writePixel(uint8_t x, uint8_t y, uint8_t brightness);
+		void writePixel(size_t x, size_t y, uint8_t brightness);
 		/// Gets the current brightness of a pixel on the display
 		/// \param x The x coordinate of the pixel to read
 		/// \param y The y coordinate of the pixel to read
-		uint8_t readPixel(uint8_t x, uint8_t y);
+		uint8_t readPixel(size_t x, size_t y);
+		/// Gets the width of a given character in the typeset.
+		/// \param char The character to return the width of
+		/// \return     The width of the given character in pixels
+		size_t characterWidth(char character);
 		/// Writes a character to the screen with its leftmost pixel at the given x position
 		/// \param x         The leftmost pixel of the resultant character
 		/// \param character The given character to write to the screen
 		/// \return          The width of the written character
-		size_t writeCharacter(uint8_t x, char character);
+		size_t writeCharacter(size_t x, char character);
+		/// Calculates the width of a given string
+		/// \param text The text to calculate the width of
+		/// \return     The width of the given text in pixels
+		size_t textWidth(const char* text);
 		/// Writes text to the given x coordinate
 		/// \param x          The x coordinate to write the text to
-		/// \param text       The text to write to the screen
-		/// \param textLength The number of characters in the given text
-		void writeText(uint8_t x, char* text, size_t textLength);
+		/// \param text       The text to write to the screen (null terminated)
+		void writeText(size_t x, const char* text);
 		/// Draws the contents of the screen, should be called frequently while screen is on.
 		void draw(void);
 		/// Continuously draws for an amount of time.
