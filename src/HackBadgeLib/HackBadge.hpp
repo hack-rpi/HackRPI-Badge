@@ -1,7 +1,7 @@
 #ifndef __HACKBADGE_HPP__
 #define __HACKBADGE_HPP__
 
-// uint8_t
+// uint8_t, size_t
 #include <stdint.h>
 // SPISettings
 #include <SPI.h>
@@ -79,6 +79,16 @@ class HackBadge {
 		/// \param x The x coordinate of the pixel to read
 		/// \param y The y coordinate of the pixel to read
 		uint8_t readPixel(uint8_t x, uint8_t y);
+		/// Writes a character to the screen with its leftmost pixel at the given x position
+		/// \param x         The leftmost pixel of the resultant character
+		/// \param character The given character to write to the screen
+		/// \return          The width of the written character
+		size_t writeCharacter(uint8_t x, char character);
+		/// Writes text to the given x coordinate
+		/// \param x          The x coordinate to write the text to
+		/// \param text       The text to write to the screen
+		/// \param textLength The number of characters in the given text
+		void writeText(uint8_t x, char* text, size_t textLength);
 		/// Draws the contents of the screen, should be called frequently while screen is on.
 		void draw(void);
 		/// Continuously draws for an amount of time.
