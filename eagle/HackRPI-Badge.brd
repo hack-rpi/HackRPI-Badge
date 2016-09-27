@@ -158,7 +158,6 @@
 <wire x1="3.81" y1="41.91" x2="3.81" y2="50.8" width="0" layer="20"/>
 <wire x1="3.81" y1="50.8" x2="7.62" y2="50.8" width="0" layer="20" curve="-180"/>
 <wire x1="7.62" y1="41.91" x2="3.81" y2="41.91" width="0" layer="20" curve="-180"/>
-<text x="68.58" y="46.99" size="5.08" layer="21" rot="R90" align="center">HackRPI</text>
 <text x="120.65" y="3.81" size="2.54" layer="21" rot="R180" align="top-left">Prototype Batch 1</text>
 </plain>
 <libraries>
@@ -1055,6 +1054,93 @@ thin small outline package</description>
 <vertex x="23.6982" y="-16.37855625"/>
 </polygon>
 </package>
+<package name="HACKRPI-SCREW">
+<polygon width="0" layer="21">
+<vertex x="4.6918875" y="6.298184375"/>
+<vertex x="6.059425" y="7.249159375"/>
+<vertex x="7.424928125" y="8.198103125"/>
+<vertex x="8.7924625" y="9.14908125"/>
+<vertex x="10.16" y="10.10005625"/>
+<vertex x="10.16" y="10.120375"/>
+<vertex x="10.16" y="11.31925625"/>
+<vertex x="8.3271375" y="11.31925625"/>
+<vertex x="6.494271875" y="11.31925625"/>
+<vertex x="4.661409375" y="11.31925625"/>
+<vertex x="2.82854375" y="11.31925625"/>
+<vertex x="0.99568125" y="11.31925625"/>
+<vertex x="0.508" y="10.0797375"/>
+<vertex x="-0.52831875" y="10.0797375"/>
+<vertex x="-1.016" y="11.31925625"/>
+<vertex x="-2.8448" y="11.31925625"/>
+<vertex x="-4.6736" y="11.31925625"/>
+<vertex x="-6.5024" y="11.31925625"/>
+<vertex x="-8.3312" y="11.31925625"/>
+<vertex x="-10.16" y="11.31925625"/>
+<vertex x="-10.16" y="10.120375"/>
+<vertex x="-10.16" y="10.10005625"/>
+<vertex x="-8.798559375" y="9.14908125"/>
+<vertex x="-7.43711875" y="8.2001375"/>
+<vertex x="-6.07568125" y="7.249159375"/>
+<vertex x="-4.714240625" y="6.298184375"/>
+<vertex x="-4.511040625" y="5.180584375"/>
+<vertex x="-4.307840625" y="4.062984375"/>
+<vertex x="-2.527809375" y="4.400296875"/>
+<vertex x="-0.747775" y="4.737609375"/>
+<vertex x="1.03225625" y="5.07491875"/>
+<vertex x="2.8122875" y="5.41223125"/>
+<vertex x="4.59231875" y="5.74954375"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="2.720846875" y="-4.349496875"/>
+<vertex x="0.959103125" y="-4.688840625"/>
+<vertex x="-0.802640625" y="-5.028184375"/>
+<vertex x="-2.564384375" y="-5.367528125"/>
+<vertex x="-2.37134375" y="-6.3936875"/>
+<vertex x="-2.178303125" y="-7.419846875"/>
+<vertex x="-0.68071875" y="-7.13536875"/>
+<vertex x="0.8168625" y="-6.8508875"/>
+<vertex x="2.314446875" y="-6.566409375"/>
+<vertex x="2.517646875" y="-5.45896875"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="3.493009375" y="-0.24485625"/>
+<vertex x="1.800353125" y="-0.569975"/>
+<vertex x="0.109728125" y="-0.895096875"/>
+<vertex x="-1.582928125" y="-1.220215625"/>
+<vertex x="-3.275584375" y="-1.5453375"/>
+<vertex x="-3.08254375" y="-2.571496875"/>
+<vertex x="-2.889503125" y="-3.59765625"/>
+<vertex x="-0.89814375" y="-3.217671875"/>
+<vertex x="1.093215625" y="-2.8376875"/>
+<vertex x="3.084575" y="-2.457703125"/>
+<vertex x="3.287775" y="-1.3502625"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="1.82676875" y="-9.205975"/>
+<vertex x="1.969009375" y="-8.47445625"/>
+<vertex x="0.058928125" y="-8.83005625"/>
+<vertex x="-1.851153125" y="-9.18565625"/>
+<vertex x="-1.851153125" y="-9.205975"/>
+<vertex x="-0.926590625" y="-10.262615625"/>
+<vertex x="-0.00203125" y="-11.31925625"/>
+<vertex x="0.91236875" y="-10.262615625"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="4.244846875" y="3.859784375"/>
+<vertex x="2.598928125" y="3.54685625"/>
+<vertex x="0.953009375" y="3.233928125"/>
+<vertex x="-0.6929125" y="2.921"/>
+<vertex x="-2.33883125" y="2.608071875"/>
+<vertex x="-3.984753125" y="2.29514375"/>
+<vertex x="-3.7917125" y="1.268984375"/>
+<vertex x="-3.598671875" y="0.242825"/>
+<vertex x="-1.739390625" y="0.594359375"/>
+<vertex x="0.1198875" y="0.9438625"/>
+<vertex x="1.97916875" y="1.2954"/>
+<vertex x="3.838446875" y="1.6469375"/>
+<vertex x="4.041646875" y="2.754375"/>
+</polygon>
+</package>
 </packages>
 </library>
 <library name="adafruit">
@@ -1459,7 +1545,7 @@ design rules under a new name.</description>
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="15mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -1756,6 +1842,7 @@ design rules under a new name.</description>
 <attribute name="PARTNO" value="AT25SF041-SSHD-T" x="91.44" y="54.61" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$1" library="mylib" package="HACKRPI-LOGO" value="" x="60.325" y="46.6725" rot="MR270"/>
+<element name="U$2" library="mylib" package="HACKRPI-SCREW" value="" x="101.6" y="45.72" rot="R90"/>
 </elements>
 <signals>
 <signal name="RESET">
