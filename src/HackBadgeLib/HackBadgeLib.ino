@@ -73,7 +73,7 @@ void loop() {
 	badge.drawFor(200);
 	*/
 	// Scrolling text test
-	
+	/*
 	size_t i;
 	size_t j;
 	size_t width = badge.textWidth(DISPLAY_TEXT);
@@ -84,6 +84,40 @@ void loop() {
 		badge.writeText(width + 1 - i, DISPLAY_TEXT, 255);
 		badge.drawFor(200);
 		ArduinoOTA.handle();
-	}
+	}*/
+	// Input test
+	static size_t x = 0;
+	static uint8_t prevButtons = 0;
+	size_t width = badge.textWidth(DISPLAY_TEXT);
+	uint8_t buttons = badge.readInputs();
 	
+	badge.clear();
+	badge.writeText(0 - x, DISPLAY_TEXT, 255);
+	badge.writeText(width + 1 - x, DISPLAY_TEXT, 255);
+	
+	if (buttons)
+	{
+		x++;
+	}
+	/*if (buttons & 0b100 && !(prevButtons & 0b100))
+	{
+		uint32_t startTime = millis();
+		uint8_t  buttonHeld = 1;
+		while ((uint32_t)(millis() - startTime) <= 20)
+		{
+			buttons = badge.readInputs();
+			if (!(buttons & 0b100))
+			{
+				buttonHeld = 0;
+				break;
+			}
+			badge.drawFor(1);
+		}
+		if (buttonHeld)
+		{
+			x++;
+		}
+	}
+	prevButtons = buttons;*/
+	badge.drawFor(100);	
 }

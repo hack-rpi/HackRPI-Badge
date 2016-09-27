@@ -11,6 +11,8 @@ HackBadge::HackBadge()
 	// Initialize hardware
 	pinMode(OE_PIN, OUTPUT);
 	pinMode(LATCH_PIN, OUTPUT);
+	pinMode(INPUT_CS, OUTPUT);
+	digitalWrite(INPUT_CS, HIGH);
 	SPI.begin();
 	// Reset display
 	clear();
@@ -170,4 +172,16 @@ void HackBadge::drawFor(uint32_t duration)
 		draw();
 		yield();
 	}
+}
+
+uint8_t HackBadge::readInputs()
+{
+	uint8_t shiftVal;
+	digitalWrite(INPUT_CS, LOW);
+	latch();
+	SPI.beginTransaction(spi_settings);
+	shiftVal = SPI.transfer(0x00);
+	SPI.endTransaction();
+	digitalWrite(INPUT_CS, HIGH);
+	return shiftVal;
 }

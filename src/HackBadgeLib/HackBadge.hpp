@@ -16,6 +16,8 @@ class HackBadge {
 		static const uint8_t OE_PIN         = 4;
 		/// The pin connected to the shift registers' latch pins
 		static const uint8_t LATCH_PIN      = 5;
+		/// The pin connected to the input shift register's chip select pin
+		static const uint8_t INPUT_CS       = 2;
 		/// Number of pixels in a single row of a single matrix.
 		static const uint8_t MATRIX_WIDTH   = 8;
 		/// Number of rows in a single matrix.
@@ -79,8 +81,9 @@ class HackBadge {
 		/// \param brightness The new brightness of the pixel
 		void writePixel(size_t x, size_t y, uint8_t brightness);
 		/// Gets the current brightness of a pixel on the display
-		/// \param x The x coordinate of the pixel to read
-		/// \param y The y coordinate of the pixel to read
+		/// \param  x The x coordinate of the pixel to read
+		/// \param  y The y coordinate of the pixel to read
+		/// \return The brightness of the given pixel
 		uint8_t readPixel(size_t x, size_t y);
 		/// Gets the width of a given character in the typeset.
 		/// \param char The character to return the width of
@@ -106,6 +109,9 @@ class HackBadge {
 		/// Continuously draws for an amount of time.
 		/// \param duration The amount of time to draw for, in milliseconds.
 		void drawFor(uint32_t duration);
+		/// Reads the values of the input buttons from the shift register
+		/// \return A bitfield with the bits representing the states of the various buttons
+		uint8_t readInputs();
 };
 
 #endif
