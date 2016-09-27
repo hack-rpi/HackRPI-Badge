@@ -236,8 +236,8 @@
 <connect gate="G$1" pin="GPIO15" pad="10"/>
 <connect gate="G$1" pin="GPIO16" pad="4"/>
 <connect gate="G$1" pin="GPIO2" pad="11"/>
-<connect gate="G$1" pin="GPIO4" pad="13"/>
-<connect gate="G$1" pin="GPIO5" pad="14"/>
+<connect gate="G$1" pin="GPIO4" pad="14"/>
+<connect gate="G$1" pin="GPIO5" pad="13"/>
 <connect gate="G$1" pin="RESET" pad="1"/>
 <connect gate="G$1" pin="RXD" pad="15"/>
 <connect gate="G$1" pin="TXD" pad="16"/>
@@ -3273,31 +3273,6 @@ thin small outline package</description>
 <rectangle x1="-1.775" y1="2.7299" x2="-1.3749" y2="3.5501" layer="51"/>
 <rectangle x1="-2.425" y1="2.7299" x2="-2.0249" y2="3.5501" layer="51"/>
 </package>
-<package name="SO08WIDE">
-<wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
-<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
-<wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
-<circle x="-1.8034" y="-0.9906" radius="0.3556" width="0.0508" layer="21"/>
-<smd name="1" x="-1.905" y="-3.5687" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="8" x="-1.905" y="3.8862" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="2" x="-0.635" y="-3.5687" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="3" x="0.635" y="-3.5687" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="7" x="-0.635" y="3.8862" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="6" x="0.635" y="3.8862" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="4" x="1.905" y="-3.5687" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="5" x="1.905" y="3.8862" dx="0.6096" dy="2.2098" layer="1"/>
-<text x="4.0005" y="-2.032" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<text x="-2.7305" y="-2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<rectangle x1="-2.0828" y1="-2.8702" x2="-1.7272" y2="-1.8542" layer="51"/>
-<rectangle x1="-0.8128" y1="-2.8702" x2="-0.4572" y2="-1.8542" layer="51"/>
-<rectangle x1="0.4572" y1="-2.8702" x2="0.8128" y2="-1.8542" layer="51"/>
-<rectangle x1="1.7272" y1="-2.8702" x2="2.0828" y2="-1.8542" layer="51"/>
-<rectangle x1="-2.0828" y1="1.8542" x2="-1.7272" y2="2.8702" layer="51"/>
-<rectangle x1="-0.8128" y1="1.8542" x2="-0.4572" y2="2.8702" layer="51"/>
-<rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
-<rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="74595">
@@ -3323,22 +3298,6 @@ thin small outline package</description>
 <pin name="QH*" x="15.24" y="-12.7" length="middle" direction="hiz" rot="R180"/>
 <pin name="GND" x="-10.16" y="-12.7" length="middle" direction="pwr"/>
 <pin name="VCC" x="15.24" y="10.16" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-<symbol name="AT25FS010">
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.366" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="SI" x="-12.7" y="-5.08" visible="pin" length="middle"/>
-<pin name="SCK" x="-12.7" y="-10.16" visible="pin" length="middle"/>
-<pin name="HOLD" x="12.7" y="0" visible="pin" length="middle" function="dot" rot="R180"/>
-<pin name="CS" x="-12.7" y="5.08" visible="pin" length="middle" function="dot"/>
-<pin name="WP" x="12.7" y="-5.08" visible="pin" length="middle" function="dot" rot="R180"/>
-<pin name="VCC" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="12.7" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="SO" x="-12.7" y="0" visible="pin" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3437,29 +3396,6 @@ thin small outline package</description>
 <connect gate="A" pin="SCL" pad="10"/>
 <connect gate="A" pin="SER" pad="14"/>
 <connect gate="A" pin="VCC" pad="16"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AT25FS010">
-<description>1-Mbit SPI flash memory</description>
-<gates>
-<gate name="G$1" symbol="AT25FS010" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SO08WIDE">
-<connects>
-<connect gate="G$1" pin="CS" pad="1"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="HOLD" pad="7"/>
-<connect gate="G$1" pin="SCK" pad="6"/>
-<connect gate="G$1" pin="SI" pad="5"/>
-<connect gate="G$1" pin="SO" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="WP" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5660,16 +5596,10 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </part>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U8" library="SparkFun-DigitalIC" deviceset="AT25FS010" device="" value="AT25SF041">
-<attribute name="PARTNO" value="AT25SF041-SSHD-T"/>
-</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="38.1" y="-2.54" size="1.778" layer="91">GPIO0</text>
 <text x="38.1" y="5.08" size="1.778" layer="91">GPIO2</text>
 </plain>
 <instances>
@@ -5911,11 +5841,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </instance>
 <instance part="GND17" gate="1" x="-190.5" y="12.7"/>
 <instance part="SUPPLY23" gate="G$1" x="-190.5" y="45.72"/>
-<instance part="SUPPLY24" gate="G$1" x="134.62" y="-30.48"/>
-<instance part="GND18" gate="1" x="134.62" y="-58.42"/>
-<instance part="U8" gate="G$1" x="114.3" y="-40.64">
-<attribute name="PARTNO" x="114.3" y="-40.64" size="1.778" layer="96" display="off"/>
-</instance>
 </instances>
 <busses>
 <bus name="R[0..7],C[0..15]">
@@ -5974,11 +5899,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <label x="-119.38" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="-50.8" x2="91.44" y2="-50.8" width="0.1524" layer="91"/>
-<label x="91.44" y="-50.8" size="1.778" layer="95"/>
-<pinref part="U8" gate="G$1" pin="SCK"/>
-</segment>
-<segment>
 <pinref part="U7" gate="A" pin="CLK"/>
 <wire x1="104.14" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
 <label x="91.44" y="88.9" size="1.778" layer="95"/>
@@ -5995,11 +5915,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <wire x1="104.14" y1="81.28" x2="91.44" y2="81.28" width="0.1524" layer="91"/>
 <label x="91.44" y="81.28" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="91.44" y1="-40.64" x2="101.6" y2="-40.64" width="0.1524" layer="91"/>
-<label x="91.44" y="-40.64" size="1.778" layer="95"/>
-<pinref part="U8" gate="G$1" pin="SO"/>
-</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -6011,11 +5926,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <pinref part="U6" gate="A" pin="SER"/>
 <wire x1="-111.76" y1="172.72" x2="-119.38" y2="172.72" width="0.1524" layer="91"/>
 <label x="-119.38" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="101.6" y1="-45.72" x2="91.44" y2="-45.72" width="0.1524" layer="91"/>
-<label x="91.44" y="-45.72" size="1.778" layer="95"/>
-<pinref part="U8" gate="G$1" pin="SI"/>
 </segment>
 </net>
 <net name="3.3V" class="1">
@@ -6159,20 +6069,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <pinref part="SUPPLY22" gate="G$1" pin="3.3V"/>
 <wire x1="-88.9" y1="53.34" x2="-88.9" y2="50.8" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<wire x1="127" y1="-35.56" x2="134.62" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="-35.56" x2="134.62" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="SUPPLY24" gate="G$1" pin="3.3V"/>
-<wire x1="127" y1="-45.72" x2="134.62" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="-45.72" x2="134.62" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="134.62" y="-35.56"/>
-<pinref part="U8" gate="G$1" pin="WP"/>
-<pinref part="U8" gate="G$1" pin="VCC"/>
-<pinref part="U8" gate="G$1" pin="HOLD"/>
-<wire x1="134.62" y1="-40.64" x2="134.62" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="127" y1="-40.64" x2="134.62" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="134.62" y="-40.64"/>
-</segment>
 </net>
 <net name="GND" class="1">
 <segment>
@@ -6305,12 +6201,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <wire x1="-190.5" y1="17.78" x2="-190.5" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
-<segment>
-<wire x1="127" y1="-50.8" x2="134.62" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="-50.8" x2="134.62" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="GND18" gate="1" pin="GND"/>
-<pinref part="U8" gate="G$1" pin="GND"/>
-</segment>
 </net>
 <net name="INPUT_CS" class="0">
 <segment>
@@ -6329,7 +6219,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <label x="91.44" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FLASH_CS" class="0">
+<net name="GPIO0" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO0"/>
 <wire x1="17.78" y1="-5.08" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
@@ -6339,11 +6229,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <wire x1="38.1" y1="-5.08" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <label x="38.1" y="-5.08" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="101.6" y1="-35.56" x2="91.44" y2="-35.56" width="0.1524" layer="91"/>
-<label x="91.44" y="-35.56" size="1.778" layer="95"/>
-<pinref part="U8" gate="G$1" pin="CS"/>
 </segment>
 </net>
 <net name="V_BATT" class="1">
