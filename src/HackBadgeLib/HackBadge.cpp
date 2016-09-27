@@ -60,7 +60,7 @@ size_t HackBadge::characterWidth(char character)
 	return 0;
 }
 
-size_t HackBadge::writeCharacter(size_t x, char character)
+size_t HackBadge::writeCharacter(size_t x, char character, uint8_t brightness)
 {
 	size_t i;
 	size_t j;
@@ -77,7 +77,7 @@ size_t HackBadge::writeCharacter(size_t x, char character)
 				for (j = 0; j < 8; j++)
 				{
 					if (column & 0x80)
-						writePixel(x + i, j, 255);
+						writePixel(x + i, j, brightness);
 					else
 						writePixel(x + i, j, 0);
 					column <<= 1;
@@ -100,7 +100,7 @@ size_t HackBadge::textWidth(const char* text)
 	return length;
 }
 
-void HackBadge::writeText(size_t x, const char* text)
+void HackBadge::writeText(size_t x, const char* text, uint8_t brightness)
 {
 	size_t xIndex = x;
 	size_t i;
@@ -109,7 +109,7 @@ void HackBadge::writeText(size_t x, const char* text)
 	for (i = 0; (curChar = text[i]) != '\0'; i++)
 	{
 		char curChar = text[i];
-		xIndex += writeCharacter(xIndex, curChar);
+		xIndex += writeCharacter(xIndex, curChar, brightness);
 		if (xIndex < PIXELS_PER_ROW)
 		{
 			for (j = 0; j < 8; j++)
@@ -121,7 +121,7 @@ void HackBadge::writeText(size_t x, const char* text)
 	}
 }
 
-void HackBadge::writeToShiftRegisters(uint8_t row)
+void HackBadge::writeToShiftRegisters(uint8_t row, uint8_t brightness_threshold)
 {
 	uint8_t i;
 	uint8_t j;
@@ -132,7 +132,7 @@ void HackBadge::writeToShiftRegisters(uint8_t row)
 		bytes[i] = 0;
 		for (j = 0; j < MATRIX_WIDTH; j++)
 		{
-			if (readPixel(j + (i * MATRIX_WIDTH), row) > 0)
+			if (readPixel(j + (i * MATRIX_WIDTH), row) > brightness_threshold)
 			{
 				bytes[i] |= (1 << j);
 			}
@@ -149,11 +149,15 @@ void HackBadge::writeToShiftRegisters(uint8_t row)
 void HackBadge::draw()
 {
 	uint8_t i;
+	uint8_t j;
 	enableDisplay();
-	for (i = 0; i < MATRIX_HEIGHT; i++)
+	for (i = 0; i < BRIGHTNESS_LEVELS; i++)
 	{
-		writeToShiftRegisters(i);
-		delayMicroseconds(TIME_PER_ROW);
+		for (j = 0; j < MATRIX_HEIGHT; j++)
+		{
+			writeToShiftRegisters(j, i);
+			delayMicroseconds(TIME_PER_ROW);
+		}
 	}
 	disableDisplay();
 }

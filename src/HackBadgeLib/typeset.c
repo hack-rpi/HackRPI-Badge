@@ -11,7 +11,7 @@ const char TYPESET_LAST_CHAR  = '~';
 const size_t TYPESET_OFFSETS[] = 
 {
 	0,   /*   */
-    2,   /* ! */
+	2,   /* ! */
 	3,   /* " */
 	6,   /* # */
 	13,  /* $ */

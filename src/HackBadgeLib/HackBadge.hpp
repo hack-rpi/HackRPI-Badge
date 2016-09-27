@@ -26,9 +26,11 @@ class HackBadge {
 		// Configurable constants //
 		
 		/// The time between rows being drawn in microseconds.
-		static const uint8_t TIME_PER_ROW   = 100;
+		static const uint8_t TIME_PER_ROW   = 0;
 		/// The SPI clock frequency in megahertz.
-		static const uint8_t SPI_SPEED      = 1;
+		static const uint8_t SPI_SPEED      = 20;
+		/// The number of discrete brightness levels
+		static const uint8_t BRIGHTNESS_LEVELS = 16;
 		
 		// Derived constants //
 		
@@ -56,8 +58,9 @@ class HackBadge {
 		/// Pulses the shift register latch pins low, causing them to output their register values
 		void latch();
 		/// Writes one row of the pixel array to the shift registers
-		/// \param row The row of the pixel array to write
-		void writeToShiftRegisters(uint8_t row);
+		/// \param row                  The row of the pixel array to write
+		/// \param brightness_threshold The minimum of a pixel to be drawn
+		void writeToShiftRegisters(uint8_t row, uint8_t brightness_threshold);
 		/// Enables the display by pulling the shift register output enable pins high.
 		void enableDisplay(void);
 		/// Disables the display by pulling the shift register output enable pins low.
@@ -84,10 +87,11 @@ class HackBadge {
 		/// \return     The width of the given character in pixels
 		size_t characterWidth(char character);
 		/// Writes a character to the screen with its leftmost pixel at the given x position
-		/// \param x         The leftmost pixel of the resultant character
-		/// \param character The given character to write to the screen
-		/// \return          The width of the written character
-		size_t writeCharacter(size_t x, char character);
+		/// \param x          The leftmost pixel of the resultant character
+		/// \param character  The given character to write to the screen
+		/// \param brightness The brightness of the character's pixels
+		/// \return           The width of the written character
+		size_t writeCharacter(size_t x, char character, uint8_t brightness);
 		/// Calculates the width of a given string
 		/// \param text The text to calculate the width of
 		/// \return     The width of the given text in pixels
@@ -95,7 +99,8 @@ class HackBadge {
 		/// Writes text to the given x coordinate
 		/// \param x          The x coordinate to write the text to
 		/// \param text       The text to write to the screen (null terminated)
-		void writeText(size_t x, const char* text);
+		/// \param brightness The brightness of the pixels in the text
+		void writeText(size_t x, const char* text, uint8_t brightness);
 		/// Draws the contents of the screen, should be called frequently while screen is on.
 		void draw(void);
 		/// Continuously draws for an amount of time.

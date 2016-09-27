@@ -60,15 +60,30 @@ void setup() {
 
 void loop() {
 	ArduinoOTA.handle();
+	// Brightness test
+	/*
+	for (i = 0; i < 16; i++)
+	{
+		uint8_t j;
+		for (j = 0; j < 8; j++)
+		{
+			badge.writePixel(i, j, i);
+		}
+	}
+	badge.drawFor(200);
+	*/
+	// Scrolling text test
+	
 	size_t i;
 	size_t j;
 	size_t width = badge.textWidth(DISPLAY_TEXT);
 	for (i = 0; i < width + 1; i++)
 	{
 		badge.clear();
-		badge.writeText(0 - i, DISPLAY_TEXT);
-		badge.writeText(width + 1 - i, DISPLAY_TEXT);
+		badge.writeText(0 - i, DISPLAY_TEXT, 255);
+		badge.writeText(width + 1 - i, DISPLAY_TEXT, 255);
 		badge.drawFor(200);
 		ArduinoOTA.handle();
 	}
+	
 }
