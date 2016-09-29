@@ -5542,9 +5542,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <attribute name="PARTNO" value="YC164-JR-0747RL"/>
 </part>
 <part name="J1" library="SparkFun-Connectors" deviceset="FTDI_BASIC" device="PTH"/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF">
-<attribute name="PARTNO" value="CC0603ZRY5V9BB104"/>
-</part>
+<part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="1uF"/>
 <part name="J2" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="TRACE-PTH"/>
 <part name="U7" library="mylib" deviceset="74*165" device="DT">
 <attribute name="PARTNO" value="MC74HC165ADTR2G"/>
@@ -5600,7 +5598,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <sheets>
 <sheet>
 <plain>
-<text x="38.1" y="5.08" size="1.778" layer="91">GPIO2</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="0" y="0">
@@ -5718,24 +5715,24 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <instance part="SUPPLY15" gate="G$1" x="-119.38" y="132.08" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-119.38" y="132.08" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="53.34" y="-12.7">
-<attribute name="PARTNO" x="53.34" y="-12.7" size="1.778" layer="96" display="off"/>
+<instance part="R2" gate="G$1" x="53.34" y="-15.24">
+<attribute name="PARTNO" x="53.34" y="-15.24" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND11" gate="1" x="63.5" y="-15.24"/>
+<instance part="GND11" gate="1" x="63.5" y="-17.78"/>
 <instance part="SUPPLY1" gate="G$1" x="-25.4" y="0" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-25.4" y="0" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY16" gate="G$1" x="63.5" y="-5.08" smashed="yes" rot="R270">
-<attribute name="VALUE" x="58.42" y="-5.08" size="1.778" layer="96"/>
+<instance part="SUPPLY16" gate="G$1" x="63.5" y="0" smashed="yes" rot="R270">
+<attribute name="VALUE" x="58.42" y="0" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="53.34" y="-5.08">
-<attribute name="PARTNO" x="53.34" y="-5.08" size="1.778" layer="96" display="off"/>
+<instance part="R3" gate="G$1" x="53.34" y="0">
+<attribute name="PARTNO" x="53.34" y="0" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R4" gate="G$1" x="53.34" y="2.54">
-<attribute name="PARTNO" x="53.34" y="2.54" size="1.778" layer="96" display="off"/>
+<instance part="R4" gate="G$1" x="53.34" y="-7.62">
+<attribute name="PARTNO" x="53.34" y="-7.62" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SUPPLY17" gate="G$1" x="63.5" y="2.54" smashed="yes" rot="R270">
-<attribute name="VALUE" x="58.42" y="2.54" size="1.778" layer="96"/>
+<instance part="SUPPLY17" gate="G$1" x="63.5" y="-7.62" smashed="yes" rot="R270">
+<attribute name="VALUE" x="58.42" y="-7.62" size="1.778" layer="96"/>
 </instance>
 <instance part="R5" gate="G$1" x="86.36" y="20.32" rot="R90">
 <attribute name="PARTNO" x="86.36" y="20.32" size="1.778" layer="96" display="off"/>
@@ -5774,7 +5771,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <instance part="C5" gate="G$1" x="93.98" y="5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.424" y="0.381" size="1.778" layer="95"/>
 <attribute name="VALUE" x="90.424" y="-2.159" size="1.778" layer="96"/>
-<attribute name="PARTNO" x="93.98" y="5.08" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J2" gate="1" x="109.22" y="12.7"/>
 <instance part="U7" gate="A" x="116.84" y="83.82">
@@ -6005,12 +6001,12 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="-5.08" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="0" x2="63.5" y2="0" width="0.1524" layer="91"/>
 <pinref part="SUPPLY16" gate="G$1" pin="3.3V"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="2.54" x2="63.5" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-7.62" x2="63.5" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="G$1" pin="3.3V"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
@@ -6137,7 +6133,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="63.5" y1="-12.7" x2="58.42" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-15.24" x2="58.42" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-137.16" y1="55.88" x2="-129.54" y2="55.88" width="0.1524" layer="91"/>
@@ -6204,31 +6200,29 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </net>
 <net name="INPUT_CS" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO2"/>
-<wire x1="17.78" y1="-7.62" x2="25.4" y2="-7.62" width="0.1524" layer="91"/>
-<label x="17.78" y="-7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="38.1" y1="2.54" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<label x="38.1" y="2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U7" gate="A" pin="CLK_INH"/>
 <wire x1="104.14" y1="86.36" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
 <label x="91.44" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO16"/>
+<wire x1="-17.78" y1="-2.54" x2="-25.4" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-30.48" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="124.46" y1="12.7" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
+<label x="116.84" y="12.7" size="1.778" layer="95"/>
+<pinref part="J2" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO0"/>
-<wire x1="17.78" y1="-5.08" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
 <label x="17.78" y="-5.08" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="38.1" y1="-5.08" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-5.08" x2="40.64" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-5.08" x2="45.72" y2="0" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="0" x2="48.26" y2="0" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<label x="38.1" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V_BATT" class="1">
@@ -6702,25 +6696,11 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <net name="GPIO15" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO15"/>
-<wire x1="17.78" y1="-10.16" x2="25.4" y2="-10.16" width="0.1524" layer="91"/>
 <label x="17.78" y="-10.16" size="1.778" layer="95"/>
-</segment>
-<segment>
+<wire x1="17.78" y1="-10.16" x2="40.64" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-10.16" x2="45.72" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-12.7" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
-<label x="38.1" y="-12.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIO16" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO16"/>
-<wire x1="-17.78" y1="-2.54" x2="-25.4" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-25.4" y="-2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="124.46" y1="12.7" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
-<label x="116.84" y="12.7" size="1.778" layer="95"/>
-<pinref part="J2" gate="1" pin="2"/>
+<wire x1="48.26" y1="-15.24" x2="45.72" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TXO" class="0">
@@ -6978,6 +6958,14 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <pinref part="U5" gate="A" pin="SER"/>
 <wire x1="-114.3" y1="111.76" x2="-114.3" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-114.3" y1="106.68" x2="-111.76" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPIO2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO2"/>
+<label x="17.78" y="-7.62" size="1.778" layer="95"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="-7.62" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
