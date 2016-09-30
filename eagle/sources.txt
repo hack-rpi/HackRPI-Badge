@@ -18,6 +18,7 @@ Shift Register
   74HC595 (TSSOP16)
   http://www.digikey.com/product-detail/en/nxp-semiconductors/74HC595PW,118/568-2263-1-ND/946725
   74HC165 (TSSOP16)
+  http://www.digikey.com/product-detail/en/on-semiconductor/MC74HC165ADTR2G/MC74HC165ADTR2GOSCT-ND/2623462
   
 
 Resistor Arrays
