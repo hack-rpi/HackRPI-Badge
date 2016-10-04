@@ -5543,7 +5543,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </part>
 <part name="J1" library="SparkFun-Connectors" deviceset="FTDI_BASIC" device="PTH"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="1uF"/>
-<part name="J2" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="TRACE-PTH"/>
+<part name="J2" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="PTH" value="SOLDERJUMPERPTH"/>
 <part name="U7" library="mylib" deviceset="74*165" device="DT">
 <attribute name="PARTNO" value="MC74HC165ADTR2G"/>
 </part>
@@ -6215,16 +6215,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <pinref part="J2" gate="1" pin="2"/>
 </segment>
 </net>
-<net name="GPIO0" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO0"/>
-<label x="17.78" y="-5.08" size="1.778" layer="95"/>
-<wire x1="17.78" y1="-5.08" x2="40.64" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-5.08" x2="45.72" y2="0" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="0" x2="48.26" y2="0" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="V_BATT" class="1">
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="V_BATT"/>
@@ -6737,6 +6727,14 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="-137.16" y1="43.18" x2="-129.54" y2="43.18" width="0.1524" layer="91"/>
 <label x="-134.62" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO0"/>
+<label x="17.78" y="-5.08" size="1.778" layer="95"/>
+<wire x1="17.78" y1="-5.08" x2="40.64" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-5.08" x2="45.72" y2="0" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="0" x2="48.26" y2="0" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
