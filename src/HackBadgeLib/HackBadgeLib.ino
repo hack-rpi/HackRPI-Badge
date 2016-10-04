@@ -92,10 +92,32 @@ void loop() {
 	uint8_t buttons = badge.readInputs();
 	
 	badge.clear();
-	badge.writeText(0 - x, DISPLAY_TEXT, 255);
-	badge.writeText(width + 1 - x, DISPLAY_TEXT, 255);
+	char characters[3];
+	uint8_t i;
+	uint8_t upper = (buttons >> 4) & 0x0F;
+	uint8_t lower = buttons & 0x0F;
+	if (upper >= 10)
+	{
+		characters[0] = 'A' + upper - 10;
+	}
+	else
+	{
+		characters[0] = '0' + upper;
+	}
+	if (lower >= 10)
+	{
+		characters[1] = 'A' + lower - 10;
+	}
+	else
+	{
+		characters[1] = '0' + lower;
+	}
+	characters[2] = '\0';
+	badge.writeText(0, characters, 255);
+	//badge.writeText(0 - x, DISPLAY_TEXT, 255);
+	//badge.writeText(width + 1 - x, DISPLAY_TEXT, 255);
 	
-	if (buttons)
+	if (buttons & 0b100)
 	{
 		x++;
 	}
@@ -117,7 +139,8 @@ void loop() {
 		{
 			x++;
 		}
-	}
-	prevButtons = buttons;*/
+	}*/
+	x %= (width + 1);
+	prevButtons = buttons;
 	badge.drawFor(100);	
 }
