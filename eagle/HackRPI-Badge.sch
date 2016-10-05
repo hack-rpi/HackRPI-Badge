@@ -211,8 +211,8 @@
 <pin name="GPIO15" x="17.78" y="-10.16" length="middle" rot="R180"/>
 <pin name="GPIO2" x="17.78" y="-7.62" length="middle" rot="R180"/>
 <pin name="GPIO0" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="GPIO5" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="GPIO4" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="GPIO4" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO5" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="RXD" x="17.78" y="2.54" length="middle" direction="in" rot="R180"/>
 <pin name="TXD" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
 <text x="0" y="0" size="1.778" layer="94" font="vector" ratio="12" rot="R90" align="center">ESP12</text>
@@ -236,8 +236,8 @@
 <connect gate="G$1" pin="GPIO15" pad="10"/>
 <connect gate="G$1" pin="GPIO16" pad="4"/>
 <connect gate="G$1" pin="GPIO2" pad="11"/>
-<connect gate="G$1" pin="GPIO4" pad="14"/>
-<connect gate="G$1" pin="GPIO5" pad="13"/>
+<connect gate="G$1" pin="GPIO4" pad="13"/>
+<connect gate="G$1" pin="GPIO5" pad="14"/>
 <connect gate="G$1" pin="RESET" pad="1"/>
 <connect gate="G$1" pin="RXD" pad="15"/>
 <connect gate="G$1" pin="TXD" pad="16"/>
@@ -3886,8 +3886,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="GND" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <text x="1.1938" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<text x="0.635" y="1.905" size="1.27" layer="51" rot="R90">GRN</text>
-<text x="13.335" y="1.905" size="1.27" layer="51" rot="R90">BLK</text>
+<text x="0.635" y="1.905" size="1.27" layer="21" rot="R90">GRN</text>
+<text x="13.335" y="1.905" size="1.27" layer="21" rot="R90">BLK</text>
 <rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
 <rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
 <rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
@@ -6651,14 +6651,14 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <label x="-119.38" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO4"/>
-<wire x1="17.78" y1="0" x2="25.4" y2="0" width="0.1524" layer="91"/>
-<label x="17.78" y="0" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U7" gate="A" pin="SH/!LD"/>
 <wire x1="104.14" y1="91.44" x2="91.44" y2="91.44" width="0.1524" layer="91"/>
 <label x="91.44" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO4"/>
+<wire x1="17.78" y1="-2.54" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
+<label x="17.78" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OE" class="0">
@@ -6679,8 +6679,8 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO5"/>
-<wire x1="17.78" y1="-2.54" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
-<label x="17.78" y="-2.54" size="1.778" layer="95"/>
+<wire x1="17.78" y1="0" x2="25.4" y2="0" width="0.1524" layer="91"/>
+<label x="17.78" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO15" class="0">
