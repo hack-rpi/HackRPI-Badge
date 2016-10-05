@@ -459,7 +459,7 @@ thin small outline package</description>
 <rectangle x1="-2.425" y1="2.7299" x2="-2.0249" y2="3.5501" layer="51"/>
 </package>
 <package name="HACKRPI-LOGO">
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="3.2131" y="14.458315625"/>
 <vertex x="4.067809375" y="15.052675"/>
 <vertex x="4.92125" y="15.645765625"/>
@@ -494,7 +494,7 @@ thin small outline package</description>
 <vertex x="2.03835" y="13.90459375"/>
 <vertex x="3.15086875" y="14.115415625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="1.9812" y="7.803515625"/>
 <vertex x="0.880109375" y="7.591425"/>
 <vertex x="-0.22098125" y="7.379334375"/>
@@ -506,7 +506,7 @@ thin small outline package</description>
 <vertex x="1.7272" y="6.41794375"/>
 <vertex x="1.8542" y="7.11009375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="2.4638" y="10.368915625"/>
 <vertex x="1.405890625" y="10.165715625"/>
 <vertex x="0.34925" y="9.962515625"/>
@@ -519,7 +519,7 @@ thin small outline package</description>
 <vertex x="2.20853125" y="8.985884375"/>
 <vertex x="2.33553125" y="9.678034375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="1.4224" y="4.768215625"/>
 <vertex x="1.5113" y="5.225415625"/>
 <vertex x="0.3175" y="5.003165625"/>
@@ -529,7 +529,7 @@ thin small outline package</description>
 <vertex x="0.2794" y="3.447415625"/>
 <vertex x="0.8509" y="4.107815625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="2.9337" y="12.934315625"/>
 <vertex x="1.905" y="12.738734375"/>
 <vertex x="0.8763" y="12.54315625"/>
@@ -544,7 +544,7 @@ thin small outline package</description>
 <vertex x="2.6797" y="11.551284375"/>
 <vertex x="2.8067" y="12.243434375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="-13.3096" y="3.447415625"/>
 <vertex x="-14.37005" y="3.447415625"/>
 <vertex x="-15.4305" y="3.447415625"/>
@@ -598,7 +598,7 @@ thin small outline package</description>
 <vertex x="-13.73631875" y="5.794375"/>
 <vertex x="-13.522959375" y="4.62089375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="-6.20903125" y="7.676515625"/>
 <vertex x="-6.20903125" y="9.772015625"/>
 <vertex x="-6.771640625" y="9.772015625"/>
@@ -639,7 +639,7 @@ thin small outline package</description>
 <vertex x="-6.3754" y="7.67524375"/>
 <vertex x="-6.20521875" y="7.67524375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="-6.20903125" y="7.676515625"/>
 <vertex x="-5.11301875" y="7.676515625"/>
 <vertex x="-3.8481" y="7.676515625"/>
@@ -670,7 +670,7 @@ thin small outline package</description>
 <vertex x="-6.20521875" y="9.77455625"/>
 <vertex x="-6.20521875" y="7.67905625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="23.6982" y="3.447415625"/>
 <vertex x="22.622509375" y="3.447415625"/>
 <vertex x="21.54681875" y="3.447415625"/>
@@ -725,7 +725,7 @@ thin small outline package</description>
 <vertex x="22.8219" y="4.352925"/>
 <vertex x="23.70455" y="3.447415625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="11.7729" y="3.447415625"/>
 <vertex x="10.6172" y="3.447415625"/>
 <vertex x="9.4615" y="3.447415625"/>
@@ -778,7 +778,7 @@ thin small outline package</description>
 <vertex x="12.1539" y="5.555615625"/>
 <vertex x="11.9634" y="4.501515625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="-11.61288125" y="1.885315625"/>
 <vertex x="-11.61288125" y="-2.026284375"/>
 <vertex x="-11.0744" y="-2.026284375"/>
@@ -816,7 +816,7 @@ thin small outline package</description>
 <vertex x="-11.116309375" y="1.886584375"/>
 <vertex x="-11.61288125" y="1.886584375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="-11.61288125" y="1.885315625"/>
 <vertex x="-12.3571" y="1.885315625"/>
 <vertex x="-13.59661875" y="1.885315625"/>
@@ -904,7 +904,7 @@ thin small outline package</description>
 <vertex x="-11.611609375" y="-2.019934375"/>
 <vertex x="-11.611609375" y="1.891665625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="8.05688125" y="1.885315625"/>
 <vertex x="8.05688125" y="-2.026284375"/>
 <vertex x="8.290559375" y="-2.026284375"/>
@@ -951,7 +951,7 @@ thin small outline package</description>
 <vertex x="8.65378125" y="1.88404375"/>
 <vertex x="8.055609375" y="1.88404375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="8.05688125" y="1.885315625"/>
 <vertex x="7.48156875" y="1.885315625"/>
 <vertex x="6.308090625" y="1.885315625"/>
@@ -1011,7 +1011,7 @@ thin small outline package</description>
 <vertex x="8.05688125" y="-2.019934375"/>
 <vertex x="8.05688125" y="1.891665625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="23.6982" y="-17.596484375"/>
 <vertex x="22.729190625" y="-17.596484375"/>
 <vertex x="21.76145" y="-17.596484375"/>
@@ -1055,7 +1055,7 @@ thin small outline package</description>
 </polygon>
 </package>
 <package name="HACKRPI-SCREW">
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="4.6918875" y="6.298184375"/>
 <vertex x="6.059425" y="7.249159375"/>
 <vertex x="7.424928125" y="8.198103125"/>
@@ -1090,7 +1090,7 @@ thin small outline package</description>
 <vertex x="2.8122875" y="5.41223125"/>
 <vertex x="4.59231875" y="5.74954375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="2.720846875" y="-4.349496875"/>
 <vertex x="0.959103125" y="-4.688840625"/>
 <vertex x="-0.802640625" y="-5.028184375"/>
@@ -1102,7 +1102,7 @@ thin small outline package</description>
 <vertex x="2.314446875" y="-6.566409375"/>
 <vertex x="2.517646875" y="-5.45896875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="3.493009375" y="-0.24485625"/>
 <vertex x="1.800353125" y="-0.569975"/>
 <vertex x="0.109728125" y="-0.895096875"/>
@@ -1115,7 +1115,7 @@ thin small outline package</description>
 <vertex x="3.084575" y="-2.457703125"/>
 <vertex x="3.287775" y="-1.3502625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="1.82676875" y="-9.205975"/>
 <vertex x="1.969009375" y="-8.47445625"/>
 <vertex x="0.058928125" y="-8.83005625"/>
@@ -1125,7 +1125,7 @@ thin small outline package</description>
 <vertex x="-0.00203125" y="-11.31925625"/>
 <vertex x="0.91236875" y="-10.262615625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.127" layer="21">
 <vertex x="4.244846875" y="3.859784375"/>
 <vertex x="2.598928125" y="3.54685625"/>
 <vertex x="0.953009375" y="3.233928125"/>
