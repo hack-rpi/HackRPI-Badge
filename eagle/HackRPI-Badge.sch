@@ -5462,7 +5462,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <part name="LED_LEFT" library="mylib" deviceset="8X8LEDMATRIX_COLUMN_CATHODE" device="LDM-13488MI">
 <attribute name="PARTNO" value="LDM-13488MI"/>
 </part>
-<part name="LEF_RIGHT" library="mylib" deviceset="8X8LEDMATRIX_COLUMN_CATHODE" device="LDM-13488MI">
+<part name="LED_RIGHT" library="mylib" deviceset="8X8LEDMATRIX_COLUMN_CATHODE" device="LDM-13488MI">
 <attribute name="PARTNO" value="LDM-13488MI"/>
 </part>
 <part name="U4" library="SparkFun-DigitalIC" deviceset="74*595" device="">
@@ -5627,7 +5627,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <instance part="LED_LEFT" gate="G$1" x="-7.62" y="45.72">
 <attribute name="PARTNO" x="-7.62" y="45.72" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LEF_RIGHT" gate="G$1" x="35.56" y="45.72">
+<instance part="LED_RIGHT" gate="G$1" x="35.56" y="45.72">
 <attribute name="PARTNO" x="35.56" y="45.72" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U4" gate="A" x="-101.6" y="129.54">
@@ -6258,7 +6258,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <net name="N$7" class="0">
 <segment>
 <pinref part="LED_LEFT" gate="G$1" pin="R1"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="R1"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="R1"/>
 <wire x1="-27.94" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="18"/>
 <wire x1="-33.02" y1="60.96" x2="-27.94" y2="60.96" width="0.1524" layer="91"/>
@@ -6267,7 +6267,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="LEF_RIGHT" gate="G$1" pin="R2"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="R2"/>
 <pinref part="LED_LEFT" gate="G$1" pin="R2"/>
 <wire x1="15.24" y1="55.88" x2="-27.94" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="17"/>
@@ -6278,7 +6278,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <net name="N$15" class="0">
 <segment>
 <pinref part="LED_LEFT" gate="G$1" pin="R3"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="R3"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="R3"/>
 <wire x1="-27.94" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="16"/>
 <wire x1="-27.94" y1="50.8" x2="-33.02" y2="50.8" width="0.1524" layer="91"/>
@@ -6287,7 +6287,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="LEF_RIGHT" gate="G$1" pin="R4"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="R4"/>
 <pinref part="LED_LEFT" gate="G$1" pin="R4"/>
 <wire x1="15.24" y1="45.72" x2="-27.94" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="15"/>
@@ -6298,7 +6298,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <net name="N$17" class="0">
 <segment>
 <pinref part="LED_LEFT" gate="G$1" pin="R5"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="R5"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="R5"/>
 <wire x1="-27.94" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="14"/>
 <wire x1="-27.94" y1="40.64" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
@@ -6307,7 +6307,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="LEF_RIGHT" gate="G$1" pin="R6"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="R6"/>
 <pinref part="LED_LEFT" gate="G$1" pin="R6"/>
 <wire x1="15.24" y1="35.56" x2="-27.94" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="13"/>
@@ -6318,7 +6318,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <net name="N$19" class="0">
 <segment>
 <pinref part="LED_LEFT" gate="G$1" pin="R7"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="R7"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="R7"/>
 <wire x1="-27.94" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="12"/>
 <wire x1="-27.94" y1="30.48" x2="-33.02" y2="30.48" width="0.1524" layer="91"/>
@@ -6327,7 +6327,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="LEF_RIGHT" gate="G$1" pin="R8"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="R8"/>
 <pinref part="LED_LEFT" gate="G$1" pin="R8"/>
 <wire x1="15.24" y1="25.4" x2="-27.94" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="11"/>
@@ -6803,56 +6803,56 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <net name="N$23" class="0">
 <segment>
 <pinref part="RN3" gate="A" pin="1"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="C1"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="C1"/>
 <wire x1="20.32" y1="68.58" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="RN3" gate="B" pin="1"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="C2"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="C2"/>
 <wire x1="25.4" y1="68.58" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="RN3" gate="C" pin="1"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="C3"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="C3"/>
 <wire x1="30.48" y1="68.58" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="RN3" gate="D" pin="1"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="C4"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="C4"/>
 <wire x1="35.56" y1="68.58" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="RN4" gate="A" pin="1"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="C5"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="C5"/>
 <wire x1="40.64" y1="68.58" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="RN4" gate="B" pin="1"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="C6"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="C6"/>
 <wire x1="45.72" y1="68.58" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="RN4" gate="C" pin="1"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="C7"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="C7"/>
 <wire x1="50.8" y1="68.58" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="RN4" gate="D" pin="1"/>
-<pinref part="LEF_RIGHT" gate="G$1" pin="C8"/>
+<pinref part="LED_RIGHT" gate="G$1" pin="C8"/>
 <wire x1="55.88" y1="68.58" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
